@@ -97,17 +97,6 @@ async function getDataAnime() {
     }
 }
 
-function renderLoadingState(section) {
-    const resultsP = document.querySelector(`.${section} .results`);
-    resultsP.innerHTML= ""
-    resultsP.innerHTML = "Loading...";
-}
-function renderErrorState(section) {
-    const resultsP = document.querySelector(`.${section} .results`);
-    resultsP.innerHTML= ""
-    resultsP.innerHTML = "Failed to load data";
-}
-
 const renderDataAnime = (data) => {
     const containerCards = document.querySelector(".cards-anime");
     containerCards.innerHTML = "";
@@ -131,4 +120,16 @@ const renderDataAnime = (data) => {
         `;
         containerCards.appendChild(card);
     });
+}
+
+// LOADING STATE AND ERROR STATE
+function renderLoadingState(section) {
+  const resultsP = document.querySelector(`.${section} .results`);
+  resultsP.innerHTML= ""
+  resultsP.innerHTML = "Loading...";
+}
+function renderErrorState(section) {
+  const resultsP = document.querySelector(`.${section} .results`);
+  resultsP.innerHTML= ""
+  resultsP.innerHTML = "Failed to load data";
 }
