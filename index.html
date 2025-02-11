@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API LAB1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Hind+Guntur:wght@300;400;500;600;700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>AniTaskCat</h1>
+    <hr>
+    <section class="container-content">
+        <section class="facts">
+            <div id="data-cat-fact">
+                <p class="about-btn">Click on the button to get a fact of a cat!</p>
+                <button id="get-data-fact">Get Fact</button>
+                <hr>
+                <p class="results"></p>
+            </div>
+            <div class="fact"></div>
+        </section>
+
+        <section class="activities">
+            <div id="data-activity">
+                <p class="about-btn">Press the button to get a random activity!</p>
+                <button id="get-data-activity">Get Activity</button>
+                <hr>
+                <p class="results"></p>
+            </div>
+            <div class="activity"></div>
+        </section>
+        
+        <section class="anime">
+            <div id="data-anime">
+                <p class="about-btn">Use the filters to search for your favorite anime!</p>
+                <div class="form">
+                    <div class="filter">
+                        <label for="type">Type</label>
+                        <input id="type" type="text" placeholder="Write type of anime">
+                    </div>  
+                    <div class="filter">
+                        <label for="status">Status</label>
+                        <input id="status" type="text" placeholder="Enter the anime status">
+                    </div>
+                    <div class="filter">
+                        <label for="limit">Limit</label>
+                        <input id="limit" type="number" placeholder="Enter the amount you want to see">
+                    </div>
+                    <button id="get-data-anime">Search</button>
+                </div>
+                <p class="results"></p>
+            </div>
+            <div class="cards-anime"></div>
+        </section>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
