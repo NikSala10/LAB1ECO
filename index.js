@@ -80,7 +80,7 @@ async function getDataAnime() {
     const limit = document.getElementById('limit').value
     renderLoadingState("anime")
 
-    const url = `https://api.jikan.moe/v4/anime?type=${type}&duration=${status}&limit=${limit}`
+    const url = `https://api.jikan.moe/v4/anime?type=${type}&status=${status}&limit=${limit}`
     
     try {
         const response = await fetch(url)
@@ -133,3 +133,4 @@ function renderErrorState(section) {
   resultsP.innerHTML= ""
   resultsP.innerHTML = "Failed to load data";
 }
+
