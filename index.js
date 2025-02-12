@@ -112,7 +112,7 @@ const renderDataAnime = (data) => {
           <h2>${anime?.title}</h2>
           <p><b>Year:</b> ${anime?.year}</p>
           <p><b>Type:</b> ${anime?.type}</p>
-          <p><b><Status:/b> ${anime?.status}</p>
+          <p><b>Status:</b> ${anime?.status}</p>
           <p><b>Episodes:</b> ${anime?.episodes}</p>
           <p><b>Duration:</b> ${anime?.duration}</p>
           <p><b>Rating:</b> ${anime?.rating}</p>
